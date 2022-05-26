@@ -33,6 +33,7 @@ def main():
             next_state, reward, done = env.step(action)
             total_reward += reward
             state = next_state
+            print("<State: [{}, {}]>".format(state.row, state.column))
 
         print("Episode {}: Agent gets {} reward.".format(i, total_reward))
 
